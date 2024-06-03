@@ -19,3 +19,5 @@ const EditFornecedorModal: React.FC<EditFornecedorModalProps> = ({ visible, forn
         </ModalComponent>
     )
 }
+
+export default EditFornecedorModal
