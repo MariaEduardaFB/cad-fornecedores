@@ -1,31 +1,56 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
 
-.container{
-background-color: #0F0F0F;
-color: white;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+.container {
+  background-color: #0F0F0F;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.Button{
-  background-color: aqua;
+.container h1{
+  color: yellow;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.Button {
+  background-color: rgb(6, 44, 44);
   align-items: flex-start;
 }
 
-.list{
+.list {
   background-color: #1A1A1A;
-  min-height: 60vh;
+  height: 60vh;
   width: 150vh;
   display: flex;
+  flex-direction: column;
   border-radius: 5px;
-  
+  padding: 20px;
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
 }
 
+
+.fornecedor-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  color: white;
+}
+
+.fornecedor-item span {
+  flex: 1;
+}
+
+.fornecedor-item button {
+  margin-left: 10px;
+}
