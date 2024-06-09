@@ -1,0 +1,39 @@
+/* FornecedorForm.css */
+.form {
+    background-color: #0F0F0F;
+    padding: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.form-item {
+    margin-bottom: 10px; /* Aumentei um pouco o espaçamento entre os campos */
+    border-radius: 14px;
+}
+
+.custom-input {
+    background-color: #FFFFFF;
+    border: 1px solid #444;
+    color: black; /* Alterei a cor do texto para preto para melhor contraste */
+    border-radius: 10px;
+    height: 40px; /* Reduzi a altura para 40px */
+    padding: 8px; /* Adicionei um espaçamento interno */
+}
+
+.ant-input:focus {
+    border-color: #40a9ff;
+}
+
+.ant-btn-primary {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.ant-btn {
+    margin-top: 8px;
+}
+
+/* Classe para os nomes dos campos */
+.field-label {
+    color: #FFFFFF; /* Cor amarela para os nomes dos campos */
+}
