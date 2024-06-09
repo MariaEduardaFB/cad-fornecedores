@@ -1,6 +1,6 @@
-import { UserAddOutlined } from '@ant-design/icons';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from 'antd';
+import { UserAddOutlined } from '@ant-design/icons';
 import FornecedorForm from './components/FormFornecedor';
 import ModalComponent from './components/ModalComp';
 import FornecedorList from './components/ListFornecedor';
@@ -66,19 +66,24 @@ function App() {
     <>
       <div className="container">
         <h1>Cadastramento de Fornecedores</h1>
-        <Button type="primary" icon={<UserAddOutlined />} onClick={handleOpenModal}>
+        <Button type="primary" 
+          icon={<UserAddOutlined />} 
+          onClick={handleOpenModal}
+          style={{ backgroundColor: '#185612', borderColor: '#185612' }}>
           Cadastro de Fornecedor
         </Button>
         <ModalComponent visible={visible} onCancel={handleCloseModal}>
           <FornecedorForm onSave={handleSaveFornecedor} onCancel={handleCloseModal} />
         </ModalComponent>
 
-        <FornecedorList
-          fornecedores={fornecedores}
-          onView={handleViewFornecedor}
-          onEdit={handleEditFornecedor}
-          onDelete={handleDeleteFornecedor}
-        />
+        <div className="list-container">
+          <FornecedorList
+            fornecedores={fornecedores}
+            onView={handleViewFornecedor}
+            onEdit={handleEditFornecedor}
+            onDelete={handleDeleteFornecedor}
+          />
+        </div>
       </div>
 
       {selectedFornecedor && (
@@ -93,8 +98,7 @@ function App() {
             visible={editVisible}
             fornecedor={selectedFornecedor}
             onSave={handleSaveEdit}
-            onCancel={() => setEditVisible(false)}
-          />
+            onCancel={() => setEditVisible(false)} children={undefined}          />
 
           <DeleteFornecedorModal
             visible={deleteVisible}
