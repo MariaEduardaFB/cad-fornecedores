@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Form, Input, Button } from 'antd';
 import { Fornecedor } from '../interfaces/Fornecedor';
+import '../assets/styles/FormFornecedor.css'
+
 
 interface FornecedorFormProps {
   initialValues?: Partial<Fornecedor>;
@@ -32,40 +34,97 @@ const FornecedorForm: React.FC<FornecedorFormProps> = ({ initialValues = {}, onS
       form={form}
       layout="vertical"
       initialValues={initialValues}
+      className="form"
     >
-      <Form.Item name="empresa" label="Empresa" rules={[{ required: true, message: 'Por favor, insira o nome da empresa!' }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="cnpj" label="CNPJ" rules={[{ required: true, message: 'Por favor, insira o CNPJ!' }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="telefone" label="Telefone" rules={[{ required: true, message: 'Por favor, insira o telefone!' }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="email" label="Email" rules={[{ required: true, message: 'Por favor, insira o email!' }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="cep" label="CEP" rules={[{ required: true, message: 'Por favor, insira o CEP!' }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="cidade" label="Cidade" rules={[{ required: true, message: 'Por favor, insira a cidade!' }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="bairro" label="Bairro" rules={[{ required: true, message: 'Por favor, insira o bairro!' }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="logradouro" label="Logradouro" rules={[{ required: true, message: 'Por favor, insira o logradouro!' }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="site" label="Site" rules={[{ required: true, message: 'Por favor, insira o site!' }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="area_de_atuacao" label="Área de Atuação" rules={[{ required: true, message: 'Por favor, insira a área de atuação!' }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="produto_servico_oferecido" label="Produto/Serviço Oferecido" rules={[{ required: true, message: 'Por favor, insira o produto/serviço oferecido!' }]}>
-        <Input />
-      </Form.Item>
+      <Form.Item
+  name="empresa"
+  label={<span className="field-label">Empresa</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira o nome da empresa!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+<Form.Item
+  name="cnpj"
+  label={<span className="field-label">CNPJ</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira o CNPJ!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+<Form.Item
+  name="telefone"
+  label={<span className="field-label">Telefone</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira o telefone!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+<Form.Item
+  name="email"
+  label={<span className="field-label">Email</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira o email!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+<Form.Item
+  name="cep"
+  label={<span className="field-label">CEP</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira o CEP!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+<Form.Item
+  name="cidade"
+  label={<span className="field-label">Cidade</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira a cidade!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+<Form.Item
+  name="bairro"
+  label={<span className="field-label">Bairro</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira o bairro!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+<Form.Item
+  name="logradouro"
+  label={<span className="field-label">Logradouro</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira o logradouro!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+<Form.Item
+  name="site"
+  label={<span className="field-label">Site</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira o site!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+<Form.Item
+  name="area_de_atuacao"
+  label={<span className="field-label">Área de Atuação</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira a área de atuação!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+<Form.Item
+  name="produto_servico_oferecido"
+  label={<span className="field-label">Produto/Serviço Oferecido</span>}
+  className="form-item"
+  rules={[{ required: true, message: 'Por favor, insira o produto/serviço oferecido!' }]}
+>
+  <Input className="custom-input" />
+</Form.Item>
+
       <Form.Item>
         <Button type="primary" onClick={handleSave}>
           Salvar
