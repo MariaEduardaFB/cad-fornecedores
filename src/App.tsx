@@ -69,7 +69,7 @@ function App() {
         <Button type="primary" 
           icon={<UserAddOutlined />} 
           onClick={handleOpenModal}
-          style={{ backgroundColor: '#185612', borderColor: '#185612' }}>
+          style={{ backgroundColor: '#185612', borderColor: '#185612', marginBottom: '50px' }}>
           Cadastro de Fornecedor
         </Button>
         <ModalComponent visible={visible} onCancel={handleCloseModal}>
