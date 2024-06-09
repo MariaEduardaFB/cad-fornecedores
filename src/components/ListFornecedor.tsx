@@ -15,6 +15,7 @@ const FornecedorList: React.FC<FornecedorListProps> = ({ fornecedores, onView, o
   return (
     <div className='list'>
       <h3>Fornecedores Cadastrados</h3>
+
       {fornecedores.map(fornecedor => (
         <div key={fornecedor.id} className="fornecedor-item">
           <span>{fornecedor.empresa}</span>

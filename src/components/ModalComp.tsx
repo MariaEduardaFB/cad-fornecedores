@@ -14,7 +14,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ visible, onCancel, chil
       open={visible}
       onCancel={onCancel}
       footer={null}
-      className="custom-modal"  // Adicione a classe personalizada aqui
+      className="custom-modal"
     >
       {children}
     </Modal>

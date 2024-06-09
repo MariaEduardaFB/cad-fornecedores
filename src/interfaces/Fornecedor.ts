@@ -1,9 +1,9 @@
-export interface Fornecedor{
+export interface Fornecedor {
     id: number;
     empresa: string;
     cnpj: string;
     telefone: string;
-    email:string;
+    email: string;
     cep: string;
     cidade: string;
     bairro: string;
