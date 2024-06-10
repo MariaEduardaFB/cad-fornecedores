@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+<h1 align="center"> Módulo de Cadastro de Fornecedores </h1>
+O Módulo de Cadastro de Fornecedores é uma aplicação web para gerenciar fornecedores, permitindo adicionar, visualizar, editar e excluir informações de fornecedores.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#  💻 demonstração 
+### Acesse a versão em deploy da aplicação aqui:
+* `https://cad-fornecedores.vercel.app/`
+  
+##Funcionalidades
+- Título e Imagem de capa;
+- Adicionar novo fornecedor
+- Visualizar lista de fornecedores
+- Editar informações de um fornecedor
+- Excluir fornecedor
+- Pesquisar fornecedor por nome
+  
+## Tecnologias Utilizadas
+- `React`
+- `Ant Design`
+- `CSS`
+  
+### Instalação
 
-Currently, two official plugins are available:
+Siga os passos abaixo para configurar o projeto localmente:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clone o repositório:
 
-## Expanding the ESLint configuration
+git clone `https://github.com/seu-usuario/fornecedor-management.git`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Navegue até o diretório do projeto: 
 
-- Configure the top-level `parserOptions` property like this:
+- cd cad-fornecedores
+- 
+Instale as dependências:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- npm install
+Inicie a aplicação:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+npm run dev
+
+A aplicação estará disponível em `http://localhost:5173.`
+
+
