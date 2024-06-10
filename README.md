@@ -1,7 +1,7 @@
 <h1 align="center"> Módulo de Cadastro de Fornecedores </h1>
 O Módulo de Cadastro de Fornecedores é uma aplicação web para gerenciar fornecedores, permitindo adicionar, visualizar, editar e excluir informações de fornecedores.
 
-#  💻 demonstração 
+#  💻 Demonstração 
 ### Acesse a versão em deploy da aplicação aqui:
 * `https://cad-fornecedores.vercel.app/`
   
