@@ -14,6 +14,7 @@ O Módulo de Cadastro de Fornecedores é uma aplicação web para gerenciar forn
 - Pesquisar fornecedor por nome
   
 ## Tecnologias Utilizadas
+- `TypeScript`
 - `React`
 - `Ant Design`
 - `CSS`
@@ -22,21 +23,24 @@ O Módulo de Cadastro de Fornecedores é uma aplicação web para gerenciar forn
 
 Siga os passos abaixo para configurar o projeto localmente:
 
-- Clone o repositório:
+Clone o repositório:
 
-git clone `https://github.com/seu-usuario/fornecedor-management.git`
+- git clone `https://github.com/MariaEduardaFB/cad-fornecedores.git`
 
 Navegue até o diretório do projeto: 
 
 - cd cad-fornecedores
-- 
+ 
 Instale as dependências:
 
 - npm install
+
 Inicie a aplicação:
 
-npm run dev
+- npm run dev
 
 A aplicação estará disponível em `http://localhost:5173.`
 
+<p align='center'>Feito por:<br>
+Eduarda Batista</p>
 
